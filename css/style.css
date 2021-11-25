@@ -1,0 +1,55 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font: 400 16px/1.5 Lato, Tahoma, Arial, sans-serif;
+    color: #848789;
+}
+
+a {
+    text-decoration: none;
+    color: #f00;
+}
+
+ul {
+    list-style: none;
+}
+
+table {
+    border-collapse: collapse;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+table, th, td {
+    border: 1px solid #000;
+}
+
+input {
+    outline: none;
+    border: 0;
+}
+.wrapper {
+    overflow: hidden;
+}
+.container {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+.header .banner {
+    width: 100%;
+    min-height: 100vh;
+}
+.banner {
+    background: url("../images/banner.jpg") no-repeat 50% 0;
+    background-size: cover;
+}
