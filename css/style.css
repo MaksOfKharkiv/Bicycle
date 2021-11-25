@@ -11,6 +11,7 @@
 body {
     font: 400 16px/1.5 Lato, Tahoma, Arial, sans-serif;
     color: #848789;
+    margin: 0;
 }
 
 a {
@@ -52,4 +53,34 @@ input {
 .banner {
     background: url("../images/banner.jpg") no-repeat 50% 0;
     background-size: cover;
+}
+.about-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.text-18 {
+    font-size: 18px;
+}
+.text-center {
+    text-align: center;
+}
+.about-us-logo {
+    margin-top: 115px;
+}
+.about-us h3 {
+    color: #353738;
+    font-weight: 700;
+    margin: 35px auto;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    padding: 0 10px;
+}
+.about-us-text {
+    font-weight: 400;
+    max-width: 1080px;
+    padding: 0 10px;
+    text-align: center;
+    line-height: 1.8;
+    margin-bottom: 145px;
 }
