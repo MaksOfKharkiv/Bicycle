@@ -9,27 +9,89 @@
 <body>
 <div class="wrapper">
     <header class="header">
-        <nav class="navigation container">
-            
-        </nav>
-        <div class="banner"></div>
+        <div class="container">
+            <nav class="navigation">
+                <a href="/" class="logo-mobile">
+                    <img src="./images/logo.png" alt="Bicycle">
+                    </a>
+                <div class="navigation-wrapper">
+                    <ul class="left-navigation menu">
+                        <li><a href="#about-us">About Us</a></li>
+                        <li><a href="#work">Work</a></li>
+                    </ul>
+                    <a href="/" class="logo">
+                    <img src="./images/logo.png" alt="Bicycle">
+                    </a>
+                    <ul class="right-navigation menu">
+                        <li><a href="#shop">Shop</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                    <span class="close-menu"></span>
+                </div>
+                <span class="menu-button">
+                    <img src="./images/menu.png" alt="menu icon">
+                </span>
+            </nav>
+        </div>
+        <div class="banner" style="background-image: url('./images/banner.jpg')"></div>
     </header>
-</div>
-<div class="container">
-    <div class="about-us">
-        <div class="about-us-logo">
-            <img src="./images/about-us-icon.png" alt="About Us Icon">
-        </div>
-        <h3 class="text-18 text-center">A new generation of vintage bike</h3>
-        <div class="about-us-text">
-            Lorem Ipsum is simply dummy text of the printing and typesetting 
-            industry. Lorem Ipsum has been the industry's standard dummy text ever 
-            since the 1500s. When an unknown printer took a galley of type and 
-            scrambled it to make a type specimen book. It has survived not only 
-            five centuries, but also the leap into electronic typesetting. 
-            Remaining essentially unchanged.
-        </div>
-    </div>
+    <main>
+        <section id="about-us">
+            <div class="container">
+                <div class="about-us-logo text-center">
+                    <img src="./images/about-us-icon.png" alt="About Us Icon">
+                </div>
+                <h4 class="text-18 text-center">A new generation of vintage bike</h4>
+                <div class="about-us-text">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting 
+                    industry. Lorem Ipsum has been the industry's standard dummy text ever 
+                    since the 1500s. When an unknown printer took a galley of type and 
+                    scrambled it to make a type specimen book. It has survived not only 
+                    five centuries, but also the leap into electronic typesetting. 
+                    Remaining essentially unchanged.
+                </div>
+            </div>
+        </section>
+        <section id="work">
+            <div class="container">
+                <div class="row">
+                    <div class="col-66 centered bg-image" style="background-image: url('./images/work1.jpg')">
+                        <img src="./images/work1-icon.png" alt=" work1-icon">
+                    </div>
+                    <div class="col-33">
+                        <div class="col-text">
+                            <img src="./images/work2-icon.png" alt="work2-icon">
+                            <h4 class="text-18">Vintage oliva</h4>
+                            <p>
+                                Lorem Ipsum is simply dummy text of the printing and 
+                                typesetting industry. Lorem Ipsum has been the 
+                                industry's standard dummy text ever since the 1500s. 
+                                When an unknown printer took a galley of type and 
+                                scrambled it to make a type specimen book. It has 
+                                survived.
+                            </p>
+                        </div>
+                        <div class="col-100-img">
+                            <img src="./images/work2.jpg" alt="work2">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="shop">
+            <div class="container">
+                
+            </div>
+        </section>
+        <section id="contact">
+            <div class="container">
+                
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+
+    </footer>
 </div>
 <script src="./js/jquery.min.js"></script>
 <script src="./js/scripts.js"></script>
