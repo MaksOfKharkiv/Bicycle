@@ -3,7 +3,8 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 body {
@@ -34,6 +35,26 @@ input {
     outline: none;
     border: 0;
 }
+::-webkit-input-placeholder {
+    font-style: italic;
+    color: rgba(146, 146, 146, 0.5);
+}
+::-moz-placeholder {
+    font-style: italic;
+    color: rgba(146, 146, 146, 0.5);
+}
+:-ms-input-placeholder {
+    font-style: italic;
+    color: rgba(146, 146, 146, 0.5);
+}
+::-ms-input-placeholder {
+    font-style: italic;
+    color: rgba(146, 146, 146, 0.5);
+}
+::placeholder {
+    font-style: italic;
+    color: rgba(146, 146, 146, 0.5);
+}
 .wrapper {
     overflow: hidden;
 }
@@ -47,6 +68,7 @@ input {
 .header .banner {
     width: 100%;
     min-height: 100vh;
+    
 }
 .banner {
     background-size: cover;
@@ -57,41 +79,64 @@ input {
     left: 0;
     top: 0;
     width: 100%;
-    padding: 25px 15px 15px;
+    padding: 35px 15px 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 .navigation-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 100%;
 }
 .navigation .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-bottom: 13px;
 }
 .navigation .left-navigation {
-    justify-content: flex-end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
 }
 .logo img {
     width: 94px;
     margin: 0 27px;
 }
 .logo {
-    flex-shrink: 0;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
 }
 .navigation .menu {
     width: calc(50% - 74px);
-    flex-grow: 1;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
 }
 .menu a {
     color: #4d4959;
     font-size: 13px;
     text-transform: uppercase;
     font-weight: 700;
-    padding: 5px 35px;
+    padding: 5px 37px;
+    letter-spacing: 2px;
     display: block;
 }
 .menu li {
@@ -116,10 +161,14 @@ input {
     position: absolute;
     right: 20px;
     top: 20px;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
     transition: .3s;
 }
 .close-menu:hover {
-    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+            transform: rotate(-90deg);
 }
 .menu-button {
     cursor: pointer;
@@ -132,10 +181,18 @@ input {
 }
 
 #about-us {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     background: #f7f7f7;
+    padding: 117px 0 130px;
 }
 .text-18 {
     font-size: 18px;
@@ -143,40 +200,43 @@ input {
 .text-center {
     text-align: center;
 }
-.about-us-logo {
-    margin-top: 117px;
-}
 .container .title-work {
     color: #353738;
     font-weight: 700;
-    margin: 21px auto;
+    margin: 22px auto 13px;
     text-transform: uppercase;
-    letter-spacing: 4px;
+    letter-spacing: 3.6px;
     padding: 0 10px;
 }
 .about-us-text {
+    font-size: 18px;
     font-weight: 400;
     max-width: 1080px;
     padding: 0 10px;
     text-align: center;
-    line-height: 1.8;
-    margin-bottom: 145px;
+    line-height: 2.05;
 }
 .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }
 .col-33 {
     width: 33.3%;
-    flex-shrink: 0;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
 }
 .col-50 {
     width: 50%;
-    flex-shrink: 0;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
 }
 .col-66 {
     width: 66.7%;
-    flex-shrink: 0;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
 }
 .col-100 {
     width: 100%;
@@ -189,19 +249,29 @@ input {
     width: 100%;
 }
 .centered {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 .bg-image {
     background-size: cover;
     background-position: 50% 50%;
 }
+#work .title-work {
+    margin: 13px auto 8px;
+}
 .col-text {
-    padding: 72px 66px 55px;
+    padding: 70px 66px 55px;
     background: #fff;
     text-align: center;
     position: relative;
+    line-height: 1.85;
 }
 .col-text:after {
     content: '';
@@ -290,6 +360,8 @@ input {
     left: 0;
     top: 0;
     opacity: 0;
+    -webkit-transition: .4s;
+    -o-transition: .4s;
     transition: .4s;
     background: rgba(100, 194, 158, 0.8) url('../images/shop-icon.png') no-repeat 50% 50%;
     z-index: 1;
@@ -300,8 +372,12 @@ input {
 .shop-row {
     width: 100%;
     padding: 75px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     background: #282f35;
 }
 .shop-button {
@@ -319,6 +395,89 @@ input {
     color: #282f35;
     background: #fff; 
 }
+#contact {
+    text-align: center;
+    padding: 109px 0;
+}
+.contact-logo {
+    margin: 0 0 35px;
+}
+#contact p {
+    font-size: 24px;
+    font-style: italic;
+    margin: 0 0 30px;
+}
+#contact form {
+    width: 100%;
+    max-width: 534px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.button {
+    font-weight: 300;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    background: #64c29e;
+    border: 1px solid #64c29e;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+    padding: 20px 45px;
+}
+.button:hover {
+    background: transparent;
+    color: #64c29e;
+}
+#contact .button {
+    margin-left: 8px;
+}
+#contact input[type="email"] {
+    border: 1px solid #d3d7d9;
+    padding: 20px 45px;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    font-size: 20px;
+}
+.footer {
+    background: #f7f7f7;
+    padding: 94px 0 100px;
+    font-size: 14px;
+    font-style: italic;
+}
+.footer .container {
+    max-width: 1130px;
+    padding: 0 15px;
+}
+.footer .row {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.footer .col:nth-child(2) {
+    padding: 0 20px
+}
+.footer .bold {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+}
+.footer a {
+    color: #848789;
+}
+.footer img {
+    vertical-align: middle;
+}
+.footer .socials a + a img {
+    margin-left: 15px;
+}
 
 @media (max-width: 1024px) {
     .logo-mobile, .menu-button, .close-menu {
@@ -334,7 +493,10 @@ input {
         right: -110%;
         top: 0;
         display: block;
-        box-shadow: -2px 0 6px 1px rgba(50, 50, 50, .3);
+        -webkit-box-shadow: -2px 0 6px 1px rgba(50, 50, 50, .3);
+                box-shadow: -2px 0 6px 1px rgba(50, 50, 50, .3);
+        -webkit-transition: 1s;
+        -o-transition: 1s;
         transition: 1s;
     }
     .navigation-wrapper.active {
@@ -356,7 +518,9 @@ input {
         padding: 10px 20px;
     }
     .header .navigation {
-        justify-content: space-between;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
         padding: 15px;
     }
     .header .banner {
@@ -453,8 +617,12 @@ input {
         min-height: 50vh;
     }
     .row {
-        flex-wrap: nowrap;
-        flex-direction: column;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
     .col-33 {
         width: 100%;
